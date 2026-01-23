@@ -1,2 +1,2 @@
 # defold-simple-keyboard
-ddd
+A very simple floating keyboard to attach to your gui. 
