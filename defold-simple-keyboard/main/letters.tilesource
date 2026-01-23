@@ -1,0 +1,364 @@
+image: "/assets/Letters.png"
+tile_width: 22
+tile_height: 22
+animations {
+  id: "A"
+  start_tile: 1
+  end_tile: 1
+  fps: 1
+}
+animations {
+  id: "Ap"
+  start_tile: 31
+  end_tile: 31
+  fps: 1
+}
+animations {
+  id: "B"
+  start_tile: 2
+  end_tile: 2
+  fps: 1
+}
+animations {
+  id: "Bp"
+  start_tile: 32
+  end_tile: 32
+  fps: 1
+}
+animations {
+  id: "C"
+  start_tile: 3
+  end_tile: 3
+  fps: 1
+}
+animations {
+  id: "Cp"
+  start_tile: 33
+  end_tile: 33
+  fps: 1
+}
+animations {
+  id: "D"
+  start_tile: 4
+  end_tile: 4
+  fps: 1
+}
+animations {
+  id: "Delete"
+  start_tile: 29
+  end_tile: 29
+  fps: 1
+}
+animations {
+  id: "Deletep"
+  start_tile: 59
+  end_tile: 59
+  fps: 1
+}
+animations {
+  id: "Done"
+  start_tile: 30
+  end_tile: 30
+  fps: 1
+}
+animations {
+  id: "Donep"
+  start_tile: 60
+  end_tile: 60
+  fps: 1
+}
+animations {
+  id: "Dot"
+  start_tile: 27
+  end_tile: 27
+  fps: 1
+}
+animations {
+  id: "Dotp"
+  start_tile: 57
+  end_tile: 57
+  fps: 1
+}
+animations {
+  id: "Dp"
+  start_tile: 34
+  end_tile: 34
+  fps: 1
+}
+animations {
+  id: "E"
+  start_tile: 5
+  end_tile: 5
+  fps: 1
+}
+animations {
+  id: "Ep"
+  start_tile: 35
+  end_tile: 35
+  fps: 1
+}
+animations {
+  id: "F"
+  start_tile: 6
+  end_tile: 6
+  fps: 1
+}
+animations {
+  id: "Fp"
+  start_tile: 36
+  end_tile: 36
+  fps: 1
+}
+animations {
+  id: "G"
+  start_tile: 7
+  end_tile: 7
+  fps: 1
+}
+animations {
+  id: "Gp"
+  start_tile: 37
+  end_tile: 37
+  fps: 1
+}
+animations {
+  id: "H"
+  start_tile: 8
+  end_tile: 8
+  fps: 1
+}
+animations {
+  id: "Hp"
+  start_tile: 38
+  end_tile: 38
+  fps: 1
+}
+animations {
+  id: "I"
+  start_tile: 9
+  end_tile: 9
+  fps: 1
+}
+animations {
+  id: "Ip"
+  start_tile: 39
+  end_tile: 39
+  fps: 1
+}
+animations {
+  id: "J"
+  start_tile: 10
+  end_tile: 10
+  fps: 1
+}
+animations {
+  id: "Jp"
+  start_tile: 40
+  end_tile: 40
+  fps: 1
+}
+animations {
+  id: "K"
+  start_tile: 11
+  end_tile: 11
+  fps: 1
+}
+animations {
+  id: "Kp"
+  start_tile: 41
+  end_tile: 41
+  fps: 1
+}
+animations {
+  id: "L"
+  start_tile: 12
+  end_tile: 12
+  fps: 1
+}
+animations {
+  id: "Lp"
+  start_tile: 42
+  end_tile: 42
+  fps: 1
+}
+animations {
+  id: "M"
+  start_tile: 13
+  end_tile: 13
+  fps: 1
+}
+animations {
+  id: "Mp"
+  start_tile: 43
+  end_tile: 43
+  fps: 1
+}
+animations {
+  id: "N"
+  start_tile: 14
+  end_tile: 14
+  fps: 1
+}
+animations {
+  id: "Np"
+  start_tile: 44
+  end_tile: 44
+  fps: 1
+}
+animations {
+  id: "O"
+  start_tile: 15
+  end_tile: 15
+  fps: 1
+}
+animations {
+  id: "Op"
+  start_tile: 45
+  end_tile: 45
+  fps: 1
+}
+animations {
+  id: "P"
+  start_tile: 16
+  end_tile: 16
+  fps: 1
+}
+animations {
+  id: "Pp"
+  start_tile: 46
+  end_tile: 46
+  fps: 1
+}
+animations {
+  id: "Q"
+  start_tile: 17
+  end_tile: 17
+  fps: 1
+}
+animations {
+  id: "Qp"
+  start_tile: 47
+  end_tile: 47
+  fps: 1
+}
+animations {
+  id: "R"
+  start_tile: 18
+  end_tile: 18
+  fps: 1
+}
+animations {
+  id: "Rp"
+  start_tile: 48
+  end_tile: 48
+  fps: 1
+}
+animations {
+  id: "S"
+  start_tile: 19
+  end_tile: 19
+  fps: 1
+}
+animations {
+  id: "Sp"
+  start_tile: 49
+  end_tile: 49
+  fps: 1
+}
+animations {
+  id: "Space"
+  start_tile: 28
+  end_tile: 28
+  fps: 1
+}
+animations {
+  id: "Spacep"
+  start_tile: 58
+  end_tile: 58
+  fps: 1
+}
+animations {
+  id: "T"
+  start_tile: 20
+  end_tile: 20
+  fps: 1
+}
+animations {
+  id: "Tp"
+  start_tile: 50
+  end_tile: 50
+  fps: 1
+}
+animations {
+  id: "U"
+  start_tile: 21
+  end_tile: 21
+  fps: 1
+}
+animations {
+  id: "Up"
+  start_tile: 51
+  end_tile: 51
+  fps: 1
+}
+animations {
+  id: "V"
+  start_tile: 22
+  end_tile: 22
+  fps: 1
+}
+animations {
+  id: "Vp"
+  start_tile: 52
+  end_tile: 52
+  fps: 1
+}
+animations {
+  id: "W"
+  start_tile: 23
+  end_tile: 23
+  fps: 1
+}
+animations {
+  id: "Wp"
+  start_tile: 53
+  end_tile: 53
+  fps: 1
+}
+animations {
+  id: "X"
+  start_tile: 24
+  end_tile: 24
+  fps: 1
+}
+animations {
+  id: "Xp"
+  start_tile: 54
+  end_tile: 54
+  fps: 1
+}
+animations {
+  id: "Y"
+  start_tile: 25
+  end_tile: 25
+  fps: 1
+}
+animations {
+  id: "Yp"
+  start_tile: 55
+  end_tile: 55
+  fps: 1
+}
+animations {
+  id: "Z"
+  start_tile: 26
+  end_tile: 26
+  fps: 1
+}
+animations {
+  id: "Zp"
+  start_tile: 56
+  end_tile: 56
+  fps: 1
+}
+extrude_borders: 2

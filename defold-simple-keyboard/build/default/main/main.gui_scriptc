@@ -1,0 +1,402 @@
+
+Ím
+³mfunction init(self)
+	self.message = "hello"
+	
+	self.message_text = gui.get_node("message_text")
+	self.keyboard = gui.get_node("Keyboard")
+	
+	self.keyboard_chars = string.len(self.message) 
+	gui.set_text(self.message_text, self.message) 
+
+	msg.post(".", "acquire_input_focus")
+end
+
+function update(self, dt)
+	
+
+	local white = vmath.vector4(1, 1, 1, 1)
+	local red = vmath.vector4(0.8, 0.2, 0.2, 1)
+	local orange = vmath.vector4(1, 0.6, 0.2, 1)
+	local yellow = vmath.vector4(1, 1, 0.4, 1)
+	local green = vmath.vector4(0.4, 0.8, 0.2, 1)
+	local cyan = vmath.vector4(0, 1, 1, 1)
+	local blue = vmath.vector4(0.2, 0.4, 1, 1)
+	local purple = vmath.vector4(0.6, 0.2, 1, 1)
+	local pink = vmath.vector4(1, 0.4, 0.6, 1)
+	local magenta = vmath.vector4(1, 0, 1, 1)
+	local brown = vmath.vector4(0.6, 0.4, 0.2, 1)
+	
+
+	if self.message == "red" then
+		gui.set_color(self.message_text, red)
+	elseif self.message == "orange" then
+		gui.set_color(self.message_text, orange)
+	elseif self.message == "yellow" then
+		gui.set_color(self.message_text, yellow)
+	elseif self.message == "green" then
+		gui.set_color(self.message_text, green)
+	elseif self.message == "cyan" then
+		gui.set_color(self.message_text, cyan)
+	elseif self.message == "blue" then
+		gui.set_color(self.message_text, blue)
+	elseif self.message == "purple" then
+		gui.set_color(self.message_text, purple)
+	elseif self.message == "pink" then
+		gui.set_color(self.message_text, pink)
+	elseif self.message == "magenta" then
+		gui.set_color(self.message_text, magenta)
+	elseif self.message == "brown" then
+		gui.set_color(self.message_text, brown)
+	elseif self.message == "big" then
+		gui.set_scale(self.message_text, vmath.vector3(3, 3, 1))
+	elseif self.message == "small" then
+		gui.set_scale(self.message_text, vmath.vector3(1, 1, 1))
+	else
+		gui.set_color(self.message_text, white)
+		gui.set_scale(self.message_text, vmath.vector3(2, 2, 1))
+	end
+
+end
+
+function on_input(self, action_id, action)
+	if self.keyboard_chars >= 0 then
+
+		if gui.pick_node(gui.get_node("keyboard_a"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_a"), "Ap")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_a"), "A")
+				self.message = self.message .. "a"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_b"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_b"), "Bp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_b"), "B")
+				self.message = self.message .. "b"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_c"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_c"), "Cp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_c"), "C")
+				self.message = self.message .. "c"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_d"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_d"), "Dp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_d"), "D")
+				self.message = self.message .. "d"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_e"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_e"), "Ep")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_e"), "E")
+				self.message = self.message .. "e"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_f"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_f"), "Fp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_f"), "F")
+				self.message = self.message .. "f"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_g"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_g"), "Gp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_g"), "G")
+				self.message = self.message .. "g"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_h"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_h"), "Hp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_h"), "H")
+				self.message = self.message .. "h"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_i"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_i"), "Ip")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_i"), "I")
+				self.message = self.message .. "i"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_j"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_j"), "Jp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_j"), "J")
+				self.message = self.message .. "j"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_k"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_k"), "Kp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_k"), "K")
+				self.message = self.message .. "k"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_l"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_l"), "Lp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_l"), "L")
+				self.message = self.message .. "l"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_m"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_m"), "Mp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_m"), "M")
+				self.message = self.message .. "m"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_n"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_n"), "Np")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_n"), "N")
+				self.message = self.message .. "n"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_o"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_o"), "Op")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_o"), "O")
+				self.message = self.message .. "o"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_p"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_p"), "Pp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_p"), "P")
+				self.message = self.message .. "p"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_q"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_q"), "Qp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_q"), "Q")
+				self.message = self.message .. "q"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_r"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_r"), "Rp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_r"), "R")
+				self.message = self.message .. "r"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_s"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_s"), "Sp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_s"), "S")
+				self.message = self.message .. "s"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_t"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_t"), "Tp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_t"), "T")
+				self.message = self.message .. "t"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_u"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_u"), "Up")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_u"), "U")
+				self.message = self.message .. "u"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_v"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_v"), "Vp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_v"), "V")
+				self.message = self.message .. "v"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_w"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_w"), "Wp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_w"), "W")
+				self.message = self.message .. "w"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_x"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_x"), "Xp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_x"), "X")
+				self.message = self.message .. "x"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_y"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_y"), "Yp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_y"), "Y")
+				self.message = self.message .. "y"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_z"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_z"), "Zp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_z"), "Z")
+				self.message = self.message .. "z"
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_dot"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_dot"), "Dotp")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_dot"), "Dot")
+				self.message = self.message .. "."
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_space"), action.x, action.y) and self.keyboard_chars > 0 then 
+			
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_space"), "Spacep")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_space"), "Space")
+				self.message = self.message .. " "
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+
+		if gui.pick_node(gui.get_node("keyboard_delete"), action.x, action.y) and self.keyboard_chars > 0 then 
+			
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_delete"), "Deletep")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_delete"), "Delete")
+				self.message = string.sub(self.message, 1, #self.message - 1)
+				gui.set_text(self.message_text, self.message)
+				self.keyboard_chars = string.len(self.message)
+			end
+		end
+
+		if gui.pick_node(gui.get_node("keyboard_done"), action.x, action.y) then
+			if action.pressed then
+				gui.play_flipbook(gui.get_node("keyboard_done"), "Donep")
+			elseif action.released then
+				gui.play_flipbook(gui.get_node("keyboard_done"), "Done")
+				if self.keyboard_chars == 0 then
+					self.message = "hello"
+					gui.set_text(self.message_text, self.message)
+					self.keyboard_chars = string.len(self.message)
+				end
+			end
+		end
+
+
+	end 
+end @main/main.gui_script" 
